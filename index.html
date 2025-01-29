@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/css/chessboard-1.0.0.min.css">
+    <style>
+        #board {
+            width: 400px;
+        }
+        #status {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chess Game</h1>
+    <div id="board"></div>
+    <div id="status"></div>
+    <div id="difficulty">
+        <label for="difficulty-select">Choose difficulty:</label>
+        <select id="difficulty-select">
+            <option value="1">Easy</option>
+            <option value="2">Medium</option>
+            <option value="3">Hard</option>
+            <option value="4">Harder</option>
+            <option value="5">Hardest</option>
+        </select>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.11.0/chess.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/js/chessboard-1.0.0.min.js"></script>
+    <script src="chess_game.js"></script>
+</body>
+</html>
